@@ -8,7 +8,7 @@ The repository is organized into the following directories and files:
   - **youtube_visualization.ipynb:** Data visualization and exploration of the top 1000 YouTube channels.
   - **youtube_models.ipynb:** Building a machine learning model to predict subscriber growth based on video views, video count, and channel age.
  
-- data: This folder contains the dataset used in the project, topSubscribed.csv, which contains information on the top 1000 YouTube channels.
+- data: This folder contains the dataset used in the project, topSubscribed.csv.
 
 ## Project Overview
 ### Data Visualization and Exploration
@@ -29,7 +29,12 @@ The analysis of the data led to several findings, such as:
 4. Fewer top YouTube channels are being created each year, according to the Top 1000 dataset.
 
 ### Machine Learning Model
-The second part of the project involves building a machine learning model to predict subscriber growth based on video views, video count, and channel age. The model was built using TensorFlow and Keras, and it was trained on a dataset that was preprocessed and scaled. The model achieved a mean squared error (MSE) of 45.37.
+The second part of the project involves building a neural network regression model to predict subscriber growth based on video views, video count, and channel age. The model was built using TensorFlow and Keras, and it was trained on a dataset that was preprocessed and scaled. 
+
+The neural network consists of 3 input neurons, 2 hidden layers, comprised of 64 and 32 neurons respectively, and 1 output neuron. 
+The hidden layers use a Rectified Linear Unit activation function, and the model was trained using Adaptive Moment Estimation
+
+The model achieved a mean squared error (MSE) of 45.37.
 
 ## Usage
 To use the Jupyter notebooks in this project, you can open them in Google Colab or another Jupyter notebook-compatible environment.
