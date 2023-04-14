@@ -31,11 +31,14 @@ The analysis of the data led to several findings, such as:
 ### Machine Learning Model
 The second part of the project involves building a neural network regression model to predict subscriber growth based on video views, video count, and channel age. The model was built using TensorFlow and Keras, and it was trained on a dataset that was preprocessed and scaled. 
 
-The neural network has three inputs, two hidden layers with 64 and 32 neurons, and one output. It uses ReLU activation and Adam optimization, achieving an MSE of 45.37.
+_The neural network has three inputs, two hidden layers with 64 and 32 neurons, and one output. It uses ReLU activation and Adam optimization, achieving an MSE of 45.37._
 
-This means that, on average, the model's predictions are around 6.74 million subscribers off. Since the dataset contains the top 1000 most subscribed channels, there seems to be a skew causing higher subscriber predictions. 
+This means that, on average, the model's predictions are around 6.74 million subscribers off. 
 
-I attempted to offset this by adding several dummy values (channels) with video counts, video views, and subscribers of 0. These values, along with the model's hyperparameters, will need to be tweaked in order to achieve a higher accuracy. A larger dataset, more representative of Youtube's channel ecosystem, will also be useful in improving the model.
+Since the dataset contains the top 1000 most subscribed channels, there seems to be a skew causing higher subscriber predictions. 
+I attempted to offset this by adding several dummy values (channels) with video counts, video views, and subscribers of 0. 
+These values, along with the model's hyperparameters, will need to be tweaked in order to achieve a higher accuracy. 
+A larger dataset, more representative of Youtube's channel ecosystem, will also be useful in improving the model.
 
 ## Usage
 To use the Jupyter notebooks in this project, you can open them in Google Colab or another Jupyter notebook-compatible environment.
